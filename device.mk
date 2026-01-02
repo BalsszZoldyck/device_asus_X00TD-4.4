@@ -32,5 +32,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     X00TDWifiOverlay
 
+# Keys 
+-include vendor/lineage-priv/keys/keys.mk
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
